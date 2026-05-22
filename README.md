@@ -27,3 +27,12 @@ During the implementation of the automated Amazon Cases block, native Amazon Con
 * **AWS Services:** Amazon Connect, AWS Lambda, Amazon DynamoDB, Amazon Lex, Amazon Polly, Contact Lens
 * **Languages:** Python (3.11+)
 * **Methodologies:** Agile/Scrum, Event-Driven Architecture, Omnichannel Routing
+
+## Team & Agile Methodology
+This architecture was designed and deployed by a 3-person engineering pod operating under Agile methodologies. To prevent deployment blockers and AWS permission conflicts, we divided the architecture into three distinct ownership domains:
+
+* **Backend & AI Logic (My Focus):** Owned the serverless AWS Lambda logic, DynamoDB database design, and Amazon Lex intent integration.
+* **CX & Routing Architecture:** Owned the Amazon Connect visual flow design, DTMF routing, and Poly SSML prompt engineering.
+* **Operations & Analytics:** Owned the contact center queue structures, Amazon Cases automated templates, and Contact Lens supervisor dashboards.
+
+We utilized GitHub Projects (Kanban) for sprint tracking and held daily stand-ups to manage integration points between our respective cloud domains.
